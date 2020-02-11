@@ -49,7 +49,7 @@
 		  <h1 class="header-author"><a href="/">穆小图</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">Mr.Wang</p>
+		<p class="header-subtitle">每一步都是未来的影子</p>
 		
 
 		<nav class="header-menu">
@@ -117,7 +117,7 @@
 			  <h1 class="header-author js-header-author">穆小图</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>Mr.Wang<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>每一步都是未来的影子<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -187,26 +187,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="从零开始搭建HEXO博客"><a href="#从零开始搭建HEXO博客" class="headerlink" title="从零开始搭建HEXO博客"></a>从零开始搭建HEXO博客</h1><p>说明：都说金窝银窝不如自己的狗窝，因此笔者开启了自己的博客之路，本文仅用于作者本人的学习与笔记记录，文中转载引用了许多大佬的教程、文档，将会在下方一一注明来源，如有侵权请联系删除。</p>
-<!--Learn more -->
-<h2 id="下载软件Git和Node-js"><a href="#下载软件Git和Node-js" class="headerlink" title="下载软件Git和Node.js"></a>下载软件Git和Node.js</h2><p>Git 下载地址：  <a href="https://git-scm.com" target="_blank" rel="noopener">https://git-scm.com</a><br><br>Node.js下载地址：<a href="https://nodejs.org/en" target="_blank" rel="noopener">https://nodejs.org/en</a></p>
-<h2 id="注册github账号"><a href="#注册github账号" class="headerlink" title="注册github账号"></a>注册github账号</h2><p>这里需要配置git来连接你的github账号，以后再具体写一个github的使用。</p>
-<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><h3 id="测试node与git的安装"><a href="#测试node与git的安装" class="headerlink" title="测试node与git的安装"></a>测试node与git的安装</h3><p>右击鼠标发现如下界面则git安装成功<br><br><img src="../images/first_blog/showgit.png" alt="图片"><br><br>鼠标右键&gt;点击Git Bash here&gt;输入<br><br><code>node -v</code>返回node的版本号<br><br><code>npm  -v</code>返回npm的版本号<br><br><img src="../images/first_blog/git-v.png" alt="图片"></p>
-<h3 id="安装淘宝镜像源"><a href="#安装淘宝镜像源" class="headerlink" title="安装淘宝镜像源"></a>安装淘宝镜像源</h3><p>鼠标右键&gt;点击Git Bash here&gt;输入<br><br><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code><br><br>输入 <code>cnpm -v</code> 查看cnpm的版本信息<br><br><img src="../images/first_blog/cnpm-v.png" alt="图片"></p>
-<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>输入<code>cnpm install -g hexo-cli</code> 开始安装hexo<br><br><img src="../images/first_blog/hexo.png" alt="图片"></p>
-<h3 id="初始化博客"><a href="#初始化博客" class="headerlink" title="初始化博客"></a>初始化博客</h3><p>在任意盘创建一个空文件夹命名myblog（可以随便命名，建议别放C盘，我的放E盘里了）<br><br>打开该文件夹，右键&gt;git bash here 输入&gt;<code>hexo init</code> 等待下载完成<br><br><img src="../images/first_blog/hexo2.png" alt="图片"><br><br><br>输入<code>hexo s</code>启动hexo，这样就能在本地访问hexo博客了<br><br>打开浏览器输入<code>http://localhost:4000</code>就能访问我们的博客啦<br><br><img src="../images/first_blog/hexo3.png" alt="图片"></p>
-<h3 id="将博客部署到github的远程仓库中"><a href="#将博客部署到github的远程仓库中" class="headerlink" title="将博客部署到github的远程仓库中"></a>将博客部署到github的远程仓库中</h3><p>在你创建的那个myblog文件夹中先安装hexo部署插件<br><br>输入&gt;<code>cnpm install --save hexo-deployer-git</code><br><br><img src="../images/first_blog/hexo4.png" alt="图片"><br><br>登录你github的账号，然后创建仓库，格式：<code>github用户名.github.io</code>如我的仓库就是cywang-jade.github.io，再然后复制刚刚这个仓库的地址<br><br><img src="../images/first_blog/7.png" alt="图片"><br>找到Blog文件中的 config.yml文件使用编辑器打开<br><img src="../images/first_blog/5.png" alt="图片"><br><img src="../images/first_blog/6.png" alt="图片"><br>保存退出后右键git bash here&gt;输入<code>hexo d</code>将博客部署到github中<br><img src="../images/first_blog/8.png" alt="图片"><br>然后在浏览器中输入xx(你github用户名).gihub.io，这样别人就能通过这个网址来访问你的博客了。</p>
-<h2 id="更换博客主题"><a href="#更换博客主题" class="headerlink" title="更换博客主题"></a>更换博客主题</h2><h3 id="下载yilia主题"><a href="#下载yilia主题" class="headerlink" title="下载yilia主题"></a>下载yilia主题</h3><p>可以手动输入网址下载后解压到themes文件夹中，也可以git bash here中输入&gt;<code>git clone http://github.com/litten/hexo-theme-yilia.git  themes/yilia</code>然后打开一级目录myblog中_config.yml文件，主题修改为yilia<br><img src="../images/first_blog/9.png" alt="图片"><br><br>接下来在git中依次输入<br><code>hexo clean</code><br><br><code>hexo g</code><br><code>hexo s</code><br><br>就能输入<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>开始本地预览了，用<code>hexo d</code>部署到远程仓库中<br><img src="../images/first_blog/10.png" alt="图片"></p>
-<h3 id="详细设置yilia主题"><a href="#详细设置yilia主题" class="headerlink" title="详细设置yilia主题"></a>详细设置yilia主题</h3><p>请参考如下博客</p>
-<ul>
-<li><a href="http://dongshuyan.com/2019/05/24/hexo%E5%8D%9A%E5%AE%A2%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" target="_blank" rel="noopener">博客1</a></li>
-<li><a href="https://www.jianshu.com/p/cc0649e7c79d" target="_blank" rel="noopener">博客2</a></li>
-<li><a href="https://cloudy-liu.github.io/2018/04/07/Hexo_yilia_主题一揽子优化方案" target="_blank" rel="noopener">博客3</a></li>
-</ul>
-<h2 id="写博客"><a href="#写博客" class="headerlink" title="写博客"></a>写博客</h2><p>在你创建的博客文件夹中（我的是e:/myblog中）右键启动git bash here 输入<code>hexo new 博客名</code>就能在source文件夹下的_post中创建一个.md的博客文件<br><img src="../images/first_blog/11.png" alt="图片"><br>用可视化代码编辑器打开这个md文件，就能用markdown语法写博客了。</p>
-<ul>
-<li>[markdown教程]（<a href="https://www.cnblogs.com/Jimmy1988/p/7053875.html）" target="_blank" rel="noopener">https://www.cnblogs.com/Jimmy1988/p/7053875.html）</a></li>
-</ul>
-<h2 id="听首歌放松一下吧"><a href="#听首歌放松一下吧" class="headerlink" title="听首歌放松一下吧"></a>听首歌放松一下吧</h2><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2013796&auto=1&height=66"></iframe>
+        
+          <a class="article-more-a" href="/all/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/#more">more >></a>
+        
       
 
       
